@@ -1,5 +1,10 @@
 # ghost-s3-compat
 
+## 2.1.0
+
+### Changed
+- Updated for ghost v0.10 compatability (#11 thanks to @acburdine)
+
 ## 2.0.0
 
 ### Changed
