@@ -109,7 +109,7 @@ S3Store.prototype.serve = function serve() {
     return function (req, res, next) {
         var params = {
             Bucket: options.bucket,
-            Key: req.path.replace(/^\//, '')
+            Key: req.path.replace(/^\//, '').replace(/\/$/, '')
         };
 
         s3.getObject(params)
