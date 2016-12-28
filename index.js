@@ -46,7 +46,7 @@ function getTargetName(image, targetDir) {
     var ext = path.extname(image.name);
     var name = path.basename(image.name, ext).replace(/\W/g, '_');
 
-    return targetDir + name + '-' + Date.now() + ext;
+    return targetDir + '/' + name + '-' + Date.now() + ext;
 }
 
 function validOptions(opts) {
