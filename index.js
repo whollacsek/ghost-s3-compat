@@ -61,7 +61,7 @@ S3Store.prototype.save = function save(image) {
       return Bluebird.reject('ghost-s3 is not configured');
     }
 
-    var targetDir = this.getTargetDir();
+    var targetDir = options.pathPrefix + this.getTargetDir();
     var targetFilename = getTargetName(image, targetDir);
 
     var s3 = new AWS.S3({
